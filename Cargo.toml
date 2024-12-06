@@ -1,0 +1,15 @@
+[package]
+name = "userspace-tcp-benchmark"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+tokio = {version="1.42",features=["rt-multi-thread","macros"]}
+lwip = "0.3.15"
+futures = "0.3.31"
+ipstack = "0.1.1"
+clap = {version = "4.5.23",features=["derive"]}
+tun = {version ="0.7.5",features=["async"]}
+ctrlc2 = {version = "3.5",features=["tokio"]}
+log = "0.4.22"
+env_logger = "0.11.5"
